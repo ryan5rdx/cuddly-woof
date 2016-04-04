@@ -1,0 +1,20 @@
+.test {
+    background-color: #7e3e3e
+}
+
+.tile {
+    width: 10rem;
+    max-width: 10rem;
+    min-width: 10rem;
+    height: 10rem;
+    max-height: 10rem;
+    min-height: 10rem;
+}
+
+.main-wrapper{
+    background-color: #fff;
+    box-shadow: 5px 5px 20px;
+}
+
+.tile-grid {
+}

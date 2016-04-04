@@ -4,6 +4,7 @@ __pycache__/
 
 # C extensions
 *.so
+*.swp
 
 # Distribution / packaging
 .Python
@@ -35,6 +36,7 @@ pip-delete-this-directory.txt
 
 # Unit test / coverage reports
 node_modules
+bundle.js
 htmlcov/
 .tox/
 .coverage

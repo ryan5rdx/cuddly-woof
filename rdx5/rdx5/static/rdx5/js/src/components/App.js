@@ -2,12 +2,16 @@ import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as TodoActions from '../actions'
+import classNames from 'classnames'
 
 class App extends Component {
   render() {
     const { todos, actions } = this.props
+    appClass = classNames({
+        test: true
+    })
     return (
-      <div>
+      <div className={appClass}>
         "APP"
       </div>
     )
