@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import {SWITCH_TAB} from '../actions/MainActions'
+import {SELECT_TAB} from '../actions/MainActions'
 
 const initialState = {
     selectedTab: 'home'
@@ -7,7 +7,7 @@ const initialState = {
 
 function mainApp(state = initialState, action) {
     switch(action.type){
-        case SWITCH_TAB:
+        case SELECT_TAB:
             return Object.assign({}, state, {
                 selectedTab:action.newTab
             })

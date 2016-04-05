@@ -2,7 +2,7 @@
 /*
  * Action Types
  */
-export const SWITCH_TAB = 'SWITCH_TAB'
+export const SELECT_TAB = 'SELECT_TAB'
 
 /*
  * other constants
@@ -10,6 +10,6 @@ export const SWITCH_TAB = 'SWITCH_TAB'
 /*
  *  Action Creators
  */
-export function switchTab(newTab)  {
-    return {type: SWITCH_TAB, newTab}
+export function selectTab(newTab)  {
+    return {type: SELECT_TAB, newTab}
 }
