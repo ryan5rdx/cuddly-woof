@@ -18,3 +18,19 @@
 
 .tile-grid {
 }
+
+.imgw {
+    width: 100%;
+}
+
+.center-card{
+    text-align:right;
+    max-width: 50rem;
+    float:none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.center-text{
+    text-align: center;
+}

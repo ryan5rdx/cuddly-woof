@@ -2,7 +2,7 @@ import { combineReducers } from 'redux'
 import {SELECT_TAB} from '../actions/MainActions'
 
 const initialState = {
-    selectedTab: 'home'
+    selectedTab: 'Home'
 }
 
 function mainApp(state = initialState, action) {

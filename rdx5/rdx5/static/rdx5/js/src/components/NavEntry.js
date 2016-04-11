@@ -3,11 +3,12 @@ import {selectTab} from '../actions/MainActions'
 import {connect} from 'react-redux'
 import classNames from 'classnames'
 
-const NavEntryC = ({ name, active, onClick }) => {
+const NavEntryC = ({ name, active, onClick, isBrand }) => {
     let classes = classNames({
-        'nav-item': true,
-        'nav-link': true,
-        'active': active
+        'nav-item': true && !isBrand,
+        'nav-link': true && !isBrand,
+        'active': active,
+        'navbar-brand': isBrand
     })
   return (
     <a href="#"
@@ -25,7 +26,8 @@ const NavEntryC = ({ name, active, onClick }) => {
 NavEntryC.propTypes = {
   name: PropTypes.string.isRequired,
   active: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
+  isBrand: PropTypes.bool
 }
 
 const mapStateToProps = (state, ownProps) => {

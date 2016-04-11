@@ -16,15 +16,14 @@ class NavBarC extends Component {
         'navbar-nav': true
     })
     let brandClasses = classNames({
-        'navbar-brand': true,
     })
     return (
       <nav className={classes}>
         <div className={innerClasses}>
-            <a className={brandClasses} href={"#"}>Ryan</a>
-            <NavEntry name={"test"} />
-            <NavEntry name={"abc"} />
-            <NavEntry name={"hello"} />
+            <NavEntry name={"Home"} isBrand={true}/>
+            <NavEntry name={"Resume"} />
+            <NavEntry name={"Contact"} />
+            <NavEntry name={"Projects"} />
         </div>
       </nav>
     )
