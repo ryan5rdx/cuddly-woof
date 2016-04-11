@@ -38,9 +38,18 @@ class MainWrapperC extends Component {
                 <embed width="100%" height="100%" src={STATIC_URL+"rdx5/resume/resume2016.pdf"} type="application/pdf"></embed>
             )
             break
-        case 'Contact':
+        case 'Links':
             content = (
-                <div>Contact</div>
+                <div className={"card card-inverse center-card"}>
+                    <div className={"card-block center-text"}>
+                    <a className={"ico"} href="http://ca.linkedin.com/in/rchuraman/"><i className={"fa fa-linkedin-square fa-3x"}></i></a>
+                    <a className={"ico"} href="mailto:ryan5rdx@gmail.com"><i className="fa fa-envelope fa-3x"></i></a>
+                    <a className={"ico"} href="https://www.facebook.com/ryan.churaman"><i className="fa fa-facebook-square fa-3x"></i></a>
+                    <a className={"ico"} href="https://github.com/ryan5rdx"><i className="fa fa-github fa-3x"></i></a>
+                    <a className={"ico"} href="https://www.goodreads.com/user/show/37481220-ryan"><i className="fa fa-book fa-3x"></i></a>
+                    <img className={"card-img-bottom imgw"} src={STATIC_URL+"rdx5/img/desk.jpg"} alt="img"/>
+                    </div>
+                </div>
             )
             break
         case 'Projects':

@@ -22,7 +22,7 @@ class NavBarC extends Component {
         <div className={innerClasses}>
             <NavEntry name={"Home"} isBrand={true}/>
             <NavEntry name={"Resume"} />
-            <NavEntry name={"Contact"} />
+            <NavEntry name={"Links"} />
             <NavEntry name={"Projects"} />
         </div>
       </nav>
